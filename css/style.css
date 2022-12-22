@@ -1,0 +1,109 @@
+/*  SETTING BACKGROUND IMAGE */
+body {
+    background-image: url('../image/vintage-clock_74190-5727.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+}
+
+/*  SHOWING CLOCK 24-HOUR FORMAT */
+#clock {
+    font-size: 75px;
+    width: 500px;
+    margin: 50px 60%;
+    text-align: center;
+    border: 2px solid rgb(128, 120, 199);
+    border-radius: 20px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #121e52;
+    border: 1px solid white;
+}
+
+/* SET ALARM CSS */
+.setAlarmForm {
+    height: 200px;
+    width: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 65%;
+
+}
+
+.setAlarmForm h1 {
+    font-size: 35px;
+    color: #121e52;
+
+}
+
+.setAlarmForm .setAlarmFiels {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.setAlarmForm .setAlarmFiels input {
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.setAlarmForm .alarmControls button {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    margin: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    background-color: #121e52;
+    color: white;
+}
+
+
+/*  STYLES FOR LIST OF ALARMS */
+#alarmDiv {
+    margin: 70px 65%;
+    /* border: 1px solid red; */
+}
+
+.alarmHeading {
+    color: #121e52;
+}
+
+
+#myList {
+
+    list-style: none;
+}
+
+#myList .listOfAlarms {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    /* color: rgb(255, 4, 222); */
+    color: #121e52;
+    font-weight: bolder;
+}
+
+#myList .listOfAlarms .time {
+    margin: 0px 50px 0px 0px;
+}
+
+#myList .listOfAlarms .deleteAlarm {
+    padding: 2px 20px;
+    background-color: #121e52;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}

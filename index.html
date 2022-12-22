@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alarm Clock</title>
+	<link rel="icon" type="image/x-icon" href="">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<!--  DIV FOR SHOWING CLOCK -->
+	<div id="clock">
+
+	</div>
+	<!--  ALARM CLOCK INPUT FORM -->
+	<form class="setAlarmForm">
+		<h1>Set Alarm</h1>
+		<div class="setAlarmFiels">
+			<input class="hourInputField" type="number" placeholder="Hours" name="a_hour" id="a_hour" max="23" min="00">
+			<input class="minutesInputField" type="number" placeholder="Mintues" name="a_min" id="a_min" max="59"
+				min="00">
+			<input class="secondsInputField" type="number" placeholder="Seconds" name="a_sec" id="a_sec" max="59"
+				min="00">
+
+		</div>
+		<div class="alarmControls">
+			<button type="submit" class="setAlarm">Set Alarm</button>
+			<button type="reset" onclick="deleteAlarm()" class="clearAlarm">Stop Alarm </button>
+		</div>
+	</form>
+	<!--  SHOWING LIST OF UPCOMING ALARMS -->
+	<div id="alarmDiv">
+		<div>
+			<h3 class="alarmHeading">Alarms</h3>
+		</div>
+		<div>
+			<ul id="myList">
+
+			</ul>
+		</div>
+	</div>
+	<script src="/Js//index.js"></script>
+</body>
+
+</html>
